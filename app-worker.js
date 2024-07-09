@@ -1,11 +1,11 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "50444ff0c8205de440ef124eb069e1834eeb4615";
-const resourcesToCache = ["/kidandcat/escama","/kidandcat/escama/app.css","/kidandcat/escama/app.js","/kidandcat/escama/manifest.webmanifest","/kidandcat/escama/wasm_exec.js","/kidandcat/escama/web/app.wasm","https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png"];
+const cacheName = "app-" + "cefc758cc6f89eddb54bd6fe9f8200823d44f5ca";
+const resourcesToCache = ["/escama","/escama/app.css","/escama/app.js","/escama/manifest.webmanifest","/escama/wasm_exec.js","/escama/web/app.wasm","https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png"];
 
 self.addEventListener("install", (event) => {
-  console.log("installing app worker 50444ff0c8205de440ef124eb069e1834eeb4615");
+  console.log("installing app worker cefc758cc6f89eddb54bd6fe9f8200823d44f5ca");
   event.waitUntil(installWorker());
 });
 
@@ -17,7 +17,7 @@ async function installWorker() {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(deletePreviousCaches());
-  console.log("app worker 50444ff0c8205de440ef124eb069e1834eeb4615 is activated");
+  console.log("app worker cefc758cc6f89eddb54bd6fe9f8200823d44f5ca is activated");
 });
 
 async function deletePreviousCaches() {

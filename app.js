@@ -13,7 +13,7 @@ var goappOnAppInstallChange = function () {
   goappAppInstallChangedBeforeWasmLoaded = true;
 };
 
-const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/kidandcat/escama","GOAPP_STATIC_RESOURCES_URL":"/kidandcat/escama/web","GOAPP_VERSION":"50444ff0c8205de440ef124eb069e1834eeb4615"};
+const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/escama","GOAPP_STATIC_RESOURCES_URL":"/escama/web","GOAPP_VERSION":"cefc758cc6f89eddb54bd6fe9f8200823d44f5ca"};
 const goappLoadingLabel = "{progress}%";
 const goappWasmContentLength = "";
 const goappWasmContentLengthHeader = "";
@@ -34,7 +34,7 @@ async function goappInitServiceWorker() {
     window.addEventListener("load", async () => {
       try {
         const registration = await navigator.serviceWorker.register(
-          "/kidandcat/escama/app-worker.js"
+          "/escama/app-worker.js"
         );
         goappServiceWorkerRegistration = registration;
         goappSetupNotifyUpdate(registration);
@@ -218,7 +218,7 @@ async function goappInitWebAssembly() {
 
     const go = new Go();
     const wasm = await instantiateStreaming(
-      fetchWithProgress("/kidandcat/escama/web/app.wasm", showProgress),
+      fetchWithProgress("/escama/web/app.wasm", showProgress),
       go.importObject
     );
 
