@@ -10,7 +10,7 @@ func main() {
 	app.GenerateStaticWebsite("./web", &app.Handler{
 		Name:        "Hello",
 		Description: "An Hello World! example",
-		Resources:   app.RemoteBucket("https://github.com/kidandcat/escama"),
+		Resources:   app.GitHubPages("kidandcat/escama/web"),
 	})
 }
 
