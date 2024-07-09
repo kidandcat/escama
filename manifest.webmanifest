@@ -25,8 +25,8 @@
       "sizes": "192x192"
     }
   ],
-  "scope": "/kidandcat/escama/web/",
-  "start_url": "/kidandcat/escama/web",
+  "scope": "/kidandcat/escama/",
+  "start_url": "/kidandcat/escama",
   "background_color": "#2d2c2c",
   "theme_color": "#2d2c2c",
   "display": "standalone"
