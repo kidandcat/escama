@@ -10,7 +10,7 @@ func main() {
 	app.GenerateStaticWebsite(".", &app.Handler{
 		Name:        "Hello",
 		Description: "An Hello World! example",
-		Resources:   app.GitHubPages("kidandcat/escama/web"),
+		Resources:   app.GitHubPages("kidandcat/escama"),
 	})
 }
 
