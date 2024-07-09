@@ -7,7 +7,7 @@ import (
 func main() {
 	app.Route("/", func() app.Composer { return &hello{} })
 	app.RunWhenOnBrowser()
-	app.GenerateStaticWebsite("./web", &app.Handler{
+	app.GenerateStaticWebsite(".", &app.Handler{
 		Name:        "Hello",
 		Description: "An Hello World! example",
 		Resources:   app.GitHubPages("kidandcat/escama/web"),
