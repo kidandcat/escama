@@ -13,7 +13,7 @@ var goappOnAppInstallChange = function () {
   goappAppInstallChangedBeforeWasmLoaded = true;
 };
 
-const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/escama","GOAPP_STATIC_RESOURCES_URL":"/escama/web","GOAPP_VERSION":"cefc758cc6f89eddb54bd6fe9f8200823d44f5ca"};
+const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/escama","GOAPP_STATIC_RESOURCES_URL":"/escama/web","GOAPP_VERSION":"297697710dbd8a254de8eaa2a58b1313f0e4729f"};
 const goappLoadingLabel = "{progress}%";
 const goappWasmContentLength = "";
 const goappWasmContentLengthHeader = "";

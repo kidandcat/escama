@@ -16,26 +16,13 @@ func main() {
 
 type hello struct {
 	app.Compo
-	name string
 }
 
 func (h *hello) Render() app.UI {
 	return app.Div().Body(
-		app.H1().Body(
-			app.Text("Hello, "),
-			app.If(h.name != "", func() app.UI {
-				return app.Text(h.name)
-			}).Else(func() app.UI {
-				return app.Text("World!")
-			}),
-		),
-		app.P().Body(
-			app.Input().
-				Type("text").
-				Value(h.name).
-				Placeholder("What is your name?").
-				AutoFocus(true).
-				OnInput(h.ValueTo(&h.name)),
-		),
+		app.Img().
+			ID("video").
+			Style("width", "100%").
+			Src("http://192.168.68.125/stream"),
 	)
 }

@@ -1,11 +1,11 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "cefc758cc6f89eddb54bd6fe9f8200823d44f5ca";
+const cacheName = "app-" + "297697710dbd8a254de8eaa2a58b1313f0e4729f";
 const resourcesToCache = ["/escama","/escama/app.css","/escama/app.js","/escama/manifest.webmanifest","/escama/wasm_exec.js","/escama/web/app.wasm","https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png"];
 
 self.addEventListener("install", (event) => {
-  console.log("installing app worker cefc758cc6f89eddb54bd6fe9f8200823d44f5ca");
+  console.log("installing app worker 297697710dbd8a254de8eaa2a58b1313f0e4729f");
   event.waitUntil(installWorker());
 });
 
@@ -17,7 +17,7 @@ async function installWorker() {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(deletePreviousCaches());
-  console.log("app worker cefc758cc6f89eddb54bd6fe9f8200823d44f5ca is activated");
+  console.log("app worker 297697710dbd8a254de8eaa2a58b1313f0e4729f is activated");
 });
 
 async function deletePreviousCaches() {
